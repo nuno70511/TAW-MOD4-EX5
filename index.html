@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function mixUp(string1, string2){
+            let slice1 = string1.slice(0, 2);
+            let slice2 = string2.slice(0, 2);
+            let slice3 = string1.slice(2, string1.Length);
+            let slice4 = string2.slice(2, string2.Length);
+
+            let resultado = slice2 + slice3 + " " + slice1 + slice4;
+            return (resultado);
+        }
+
+        console.log(mixUp("dog", "dinner"));
+    </script>
+</body>
+</html>
