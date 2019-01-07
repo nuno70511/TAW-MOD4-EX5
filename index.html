@@ -11,14 +11,34 @@
         function mixUp(string1, string2){
             let slice1 = string1.slice(0, 2);
             let slice2 = string2.slice(0, 2);
-            let slice3 = string1.slice(2, string1.Length);
-            let slice4 = string2.slice(2, string2.Length);
+            let slice3 = string1.slice(2);
+            let slice4 = string2.slice(2);
 
             let resultado = slice2 + slice3 + " " + slice1 + slice4;
             return (resultado);
         }
 
         console.log(mixUp("dog", "dinner"));
+
+
+        function verbing(verb){
+            if (verb.length >= 3){
+                let slice = verb.slice(-3);
+                if (slice == "ing"){
+                    return (verb + "ly");
+                }
+                else{
+                    return (verb + verb[verb.length-1] + "ing");
+                }
+            }
+            else{
+                return (verb);
+            }
+        }
+
+        console.log(verbing("swim"));        
+        console.log(verbing("swimming"));
+        console.log(verbing("go"));
     </script>
 </body>
 </html>
